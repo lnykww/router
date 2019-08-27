@@ -14,9 +14,13 @@ One-to-one mapping of ip in multi-dial environment
 5. run macvlan.py to create macvlan interface:
     
     a. --ip: the first ip address of lan interface
+   
     b. --num: the number of machines in the lan
+   
     c. --name: the prefix of the macvlan's name, the script will add seq automatic.
+   
     d. --eth: the parent interface of macvlan
+   
 6. config the pppoe
 7. config the dhcp server, the lan ip range in dhcpserver's configuration must be same with the 
    configuration of macvlan.py.
